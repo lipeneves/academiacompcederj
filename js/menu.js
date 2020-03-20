@@ -1,11 +1,16 @@
 var menu = $(".menuPrincipal");
 var btnMenu = $(".btn-menu");
+var btnAreaAlunos = $(".alunoArea");
 
 $(function(){
   btnMenu.click(exibirMenu);
   redimensionaMenu();
 
   $(window).resize(redimensionaMenu);
+
+  btnAreaAlunos.hover(function(){
+    $(this).find("a").addClass("alunoHover");
+  });
 });
 
 function exibirMenu() {
