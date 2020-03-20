@@ -51,7 +51,7 @@ body{
 }
 
 .menuPrincipal-link:hover{
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(31, 76, 202, 0.6);
 }
 
 svg.svg-inline--fa{
@@ -99,6 +99,13 @@ svg.svg-inline--fa{
     font-weight: bold;
     width: 200px;
     margin-top: 5px;
+    transition: background .4s;
+}
+
+#showcase .link:hover{
+    color: #eee;
+    background: rgba(2, 184, 117, 0.6);
+    transition: background .4s;
 }
 
 @media (min-width: 768px){
