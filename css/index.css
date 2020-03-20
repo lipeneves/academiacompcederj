@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container{
+    width: 92%;
+    margin: 0 auto;
+}
+
+.cabecalho{
+    display: flex;
+    align-items: center;
+    background: #1F4CCA;
+    height: 105px;
+}
+
+.cabecalho .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menuPrincipal-logo{
+    width: 190px;
+}
+
+.btn-menu{
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    width: 28px;
+}
+
+.menuPrincipal-link{
+    display: block;
+    color: #1F4CCA;
+    text-transform: uppercase;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.menuPrincipal-link:hover{
+    opacity: 0.6;
+}
+
+.menuPrincipal{
+    display: none;
+    background: #F5F6FD;
+}
+
+svg.svg-inline--fa{
+    margin-right: 10px;
+}
+
+
+/* Desktop Layout */
+
+@media (min-width: 768px){
+
+    .cabecalho .container{
+        justify-content: space-between;
+        max-width: 1200px;
+    }
+
+    .menuPrincipal{
+        display: block;
+        background: none;
+    }
+
+    .menuPrincipal-logo{
+        max-width: 190px;
+    }
+
+    .menuPrincipal-link{
+        border: none;
+        color: white;
+        text-transform: uppercase;
+        white-space: nowrap;
+    }
+
+    .menuPrincipal-list{
+        display: flex;
+    }
+
+    .menuPrincipal-list-item{
+        padding: 0 20px;
+    }
+
+    svg.svg-inline--fa{
+        display: none;
+    }
+
+}
