@@ -14,21 +14,23 @@ body{
     margin: 0 auto;
 }
 
-.cabecalho{
+/*********************************** Cabeçalho Mobile **************************************/
+
+.topo{
     display: flex;
     align-items: center;
     background: #1F4CCA;
     height: 105px;
 }
 
-.cabecalho .container{
+.topo .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .menuPrincipal-logo{
-    width: 190px;
+    width: 180px;
 }
 
 .btn-menu{
@@ -52,23 +54,63 @@ body{
     color: rgba(255, 255, 255, 0.6);
 }
 
+svg.svg-inline--fa{
+    margin-right: 10px;
+}
+
 .menuPrincipal{
     display: none;
     background: #F5F6FD;
 }
 
-svg.svg-inline--fa{
-    margin-right: 10px;
+/************************************* Showcase Mobile *****************************************/
+
+#showcase{
+    background: #1F4CCA;
+    color: #eee;
+    padding-bottom: 4rem;
 }
 
+#showcase .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-/* Desktop Layout */
+#showcase h1{
+    margin: 0;
+    padding-top: 1.15rem;
+}
+
+#showcase p{
+    font-size: 1.15rem;
+    margin: 1.6rem 0;
+}
+
+#showcase .link{
+    display: block;
+    background: #02B875;
+    text-align: center;
+    padding: .6rem;
+    border-radius: 7px;
+    color: white;
+    text-transform: uppercase;
+    font-size: .85rem;
+    font-weight: bold;
+    width: 200px;
+    margin-top: 5px;
+}
 
 @media (min-width: 768px){
 
-    .cabecalho .container{
-        justify-content: space-between;
+    /*********************************** Cabeçalho Desktop **************************************/
+
+    .container{
         max-width: 1200px;
+    }
+
+    .topo .container{
+        justify-content: space-between;
     }
 
     .menuPrincipal{
@@ -76,14 +118,14 @@ svg.svg-inline--fa{
         background: none;
     }
 
-    .menuPrincipal-logo{
-        max-width: 190px;
-    }
-
     .menuPrincipal-link{
         border: none;
         color: white;
         text-transform: uppercase;
+    }
+
+    svg.svg-inline--fa{
+        display: none;
     }
 
     .menuPrincipal-list{
@@ -110,8 +152,7 @@ svg.svg-inline--fa{
         transition: background .7s;
     }
 
-    svg.svg-inline--fa{
-        display: none;
-    }
+    
+    
 
 }

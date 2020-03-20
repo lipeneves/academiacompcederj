@@ -23,10 +23,10 @@ function redimensionaMenu(){
   if (tam >=768){
     $(".btn-menu").hide();
     menu.show();
-    menu.appendTo(".cabecalho > .container");
+    menu.appendTo(".topo > .container");
   }else{
     $(".btn-menu").show();
-    menu.appendTo(".topo");
+    menu.appendTo(".cabecalho");
     menu.hide();
   }
 }
