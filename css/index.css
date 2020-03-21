@@ -7,6 +7,7 @@
 
 body{
     font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
 }
 
 .container{
@@ -21,6 +22,12 @@ body{
     align-items: center;
     background: #1F4CCA;
     height: 105px;
+}
+
+.chamadaPrincipal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .topo .container{
@@ -48,10 +55,12 @@ body{
     padding: 11px 0;
     border-bottom: 1px solid #ddd;
     white-space: nowrap;
+    transition: color .4s;
 }
 
 .menuPrincipal-link:hover{
     color: rgba(31, 76, 202, 0.6);
+    transition: color .4s;
 }
 
 svg.svg-inline--fa{
@@ -68,7 +77,8 @@ svg.svg-inline--fa{
 #showcase{
     background: #1F4CCA;
     color: #eee;
-    padding-bottom: 4rem;
+    padding-bottom: 3.5rem;
+    text-align: center;
 }
 
 #showcase .container{
@@ -79,7 +89,7 @@ svg.svg-inline--fa{
 
 #showcase h1{
     margin: 0;
-    padding-top: 1.15rem;
+    padding-top: 1.5rem;
 }
 
 #showcase p{
@@ -99,13 +109,12 @@ svg.svg-inline--fa{
     font-weight: bold;
     width: 200px;
     margin-top: 5px;
-    transition: background .4s;
+    transition: background .5s;
 }
 
 #showcase .link:hover{
-    color: #eee;
-    background: rgba(2, 184, 117, 0.6);
-    transition: background .4s;
+    background: rgba(2, 184, 117, 0.8);
+    transition: background .5s;
 }
 
 @media (min-width: 768px){
@@ -114,6 +123,16 @@ svg.svg-inline--fa{
 
     .container{
         max-width: 1200px;
+    }
+
+    #showcase, #showcase .container{
+        height: 400px;
+    }
+
+    #showcase{
+        background: #1F4CCA url("../img/bg-showcase.png") repeat-x;
+        background-position: bottom;
+        background-size: contain;
     }
 
     .topo .container{
@@ -131,6 +150,10 @@ svg.svg-inline--fa{
         text-transform: uppercase;
     }
 
+    .menuPrincipal-link:hover{
+        color: rgba(255, 255, 255, 0.6);
+    }
+
     svg.svg-inline--fa{
         display: none;
     }
@@ -145,21 +168,80 @@ svg.svg-inline--fa{
 
     .btn-areaDoAluno{
         display: inline-block;
-        border: 2px solid white;
-        border-radius: 30px;
+        font-weight: bold;
+        font-size: .9rem;
+        color: #eee;
+        border: 1px solid #eee;
+        border-radius: 7px;
         padding: 10px;
         background: #2F62D3;
-        color: white;
         transition: background .7s;
     }
 
     .btn-areaDoAluno:hover{
-        background: white;
+        background: #eee;
         color: #1F4CCA;
         transition: background .7s;
     }
 
+    /************************************* Showcase Desktop *****************************************/
+
+    #showcase{
+        padding-bottom: 0;
+    }
+
+    #showcase .container{
+        background-image: url("../img/venci-md.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom;
+        align-items: flex-start;
+    }
     
-    
+    #showcase .chamadaPrincipal{
+        width: 50%;
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    #showcase h1{
+        font-size: 1.9rem;
+        padding-top: 1rem;
+    }
+
+    #showcase p{
+        font-size: 1rem;
+    }
+
+    @media (min-width: 844px){
+        #showcase h1{
+            padding-top: 2.5rem;
+        }       
+    }
+
+    @media (min-width: 1024px){
+        #showcase h1{
+            padding-top: 4rem;
+        } 
+
+        #showcase p{
+            font-size: 1.15rem;
+        }
+
+        #showcase, #showcase .container{
+            height: 500px;
+        }
+    }
+
+    @media (min-width: 1200px){
+
+
+        #showcase .container{
+            background-image: url("../img/venci-lg2.png");
+        }
+        #showcase, #showcase .container{
+            height: 550px;
+        }
+    }
 
 }
