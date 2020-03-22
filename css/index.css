@@ -76,7 +76,7 @@ body{
     transition: color .4s;
 }
 
-svg.svg-inline--fa{
+.menuPrincipal svg.svg-inline--fa{
     margin-right: 10px;
 }
 
@@ -135,7 +135,7 @@ svg.svg-inline--fa{
     flex-direction: column;
     align-items: center;
     background: #f5f6fd;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
 }
 
 .listaDeCursos{
@@ -170,7 +170,7 @@ svg.svg-inline--fa{
 
 @media (min-width: 675px){
     #cursos .box{
-        width: 48%;
+        width: 49%;
     }
 }
 
@@ -234,9 +234,64 @@ svg.svg-inline--fa{
     color: white;
     width: 110px;
     margin-top: 10px;
-    padding: .7rem;
+    padding: .7rem 1.2rem;
 }
 
+/************************************* Seção Cursos - Mobile *****************************************/
+
+#newsletter{
+    background: #0e7dac;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#newsletter .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#newsletter .btn-inscrevaSe{
+    background: #02B875;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: .5rem;
+    box-sizing: border-box;
+}
+
+#newsletter .btn-inscrevaSe:hover{
+    cursor: pointer;
+}
+
+#newsletter .campoEmail{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+#newsletter .campoEmail .email-newsletter{
+    border: none;
+    border-radius: 5px 0 0 5px;
+    padding: .5rem;
+    width: 85%;
+    max-width: 380px;
+}
+
+#newsletter fieldset{
+    border: none;
+    width: 80%;
+}
+
+#newsletter fieldset legend{
+    text-align: center;
+    margin: 0 auto;
+}
 
 /*********************************** Cabeçalho - Desktop **************************************/
 
@@ -265,7 +320,7 @@ svg.svg-inline--fa{
         color: rgba(255, 255, 255, 0.6);
     }
 
-    svg.svg-inline--fa{
+    .menuPrincipal svg.svg-inline--fa{
         display: none;
     }
 
@@ -321,7 +376,7 @@ svg.svg-inline--fa{
         width: 50%;
         text-align: left;
         align-items: flex-start;
-        margin-top: 45px;
+        margin-top: 35px;
     }
 
     #showcase h1{
@@ -365,7 +420,7 @@ svg.svg-inline--fa{
 
     /************************************* Seção Cursos - Desktop *****************************************/
 
-    @media (min-width: 1024px){
+    @media (min-width: 1100px){
 
         #cursos .box{
             width: 32%;
