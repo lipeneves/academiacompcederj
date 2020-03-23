@@ -36,6 +36,7 @@
     margin-bottom: 20px;
     box-shadow: 0 0 .5em rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
+    justify-content: space-between;
 }
 
 @media (min-width: 675px){
@@ -105,6 +106,11 @@
     width: 110px;
     margin-top: 10px;
     padding: .7rem 1.2rem;
+}
+
+#cursos .saibaMais:hover{
+    background: rgba(14,125,173,0.75);
+    transition: background .5s;
 }
 
 /************************************* Seção Cursos - Desktop *****************************************/

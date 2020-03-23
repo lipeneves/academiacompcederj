@@ -23,6 +23,12 @@
     width: 180px;
 }
 
+@media (min-width: 380px){
+    .menuPrincipal-logo{
+        width: 190px;
+    }
+}
+
 .btn-menu{
     background: none;
     border: none;

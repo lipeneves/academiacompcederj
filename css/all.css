@@ -5,6 +5,10 @@
     list-style-type: none;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Ubuntu', sans-serif;
     font-size: 1rem;
@@ -25,4 +29,10 @@ body{
     font-size: .9rem;
     font-weight: bold;
     transition: background .5s;
+}
+
+.inativo{
+    opacity: 0.5;
+    cursor: default;
+    pointer-events: none;
 }
