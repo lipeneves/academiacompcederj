@@ -2,6 +2,7 @@
 
 #sobre{
     background: #fff;
+    padding-bottom: 30px;
 }
 
 #sobre .container{
@@ -11,24 +12,112 @@
 }
 
 #sobre .video-sobre{
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    padding-bottom: 56.25%;
+    margin-bottom: 50px; 
+    height: 0;
+    border: 10px solid white;
+    box-shadow: 0 0 .5em rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+@media (min-width: 640px){
+    #sobre .video-sobre{
+        width: 80%;
+        padding-bottom: 43.25%; 
+    }
+}
+
+@media (min-width: 800px){
+    #sobre .video-sobre{
+        width: 70%;
+        padding-bottom: 37.25%; 
+    }
+}
+
+#sobre .video-sobre iframe{
+    position: absolute;
+    top:0;
+    left: 0;
     width: 100%;
     height: 100%;
-    border: .7rem solid white;
-    box-sizing: border-box;
-    box-shadow: 0 0 .5em rgba(0, 0, 0, 0.2);
-    margin: 20px 0;
+    border: none;
+}
+
+#sobre .img-sobre{
+    display: block;
+    margin: 0 auto 20px auto;
+    max-height: 58px;
 }
 
 #sobre h2.titulo{
     font-weight: normal;
     text-align: center;
     color: #4a535a;
+    margin: 35px 0;
 }
 
-#sobre .box{
-    
+
+@media (min-width: 425px){
+    #sobre .video-sobre{
+        border: 15px solid white; 
+    }
 }
 
-#sobre .box .titulo{
+#sobre p{
+    font-size: 1.2rem;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #4a535a;
+}
+
+#sobre .diferenciais{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+#sobre .diferenciais .box{
+    width: 100%;
+    max-width: 350px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+}
+
+@media (min-width: 640px){
+    #sobre .diferenciais .box{
+        width: 49%;
+        max-width: 325px;
+    }
+}
+
+#sobre .diferenciais .box .titulo{
     font-size: 1rem;
+    text-align: center;
+}
+
+
+/************************************* Seção Sobre - Mobile *****************************************/
+
+@media (min-width: 1024px){
+    #sobre .diferenciais .box{
+        max-width: 300px;
+    }
+}
+
+@media (min-width: 1250px){
+    #sobre h2.titulo{
+        font-size: 1.8rem;
+        margin: 50px 0;
+    }
+    #sobre .diferenciais .box{
+        width: 33%;
+        box-sizing: content-box;
+        margin: 25px 20px 50px 20px;
+    }
 }
