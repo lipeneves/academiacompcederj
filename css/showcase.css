@@ -1,0 +1,111 @@
+/************************************* Showcase - Mobile *****************************************/
+
+#showcase, #showcase .container{
+    height: 400px;
+}
+
+#showcase{
+    background: #1F4CCA;
+    color: #eee;
+    text-align: center;
+}
+
+#showcase .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#showcase h1{
+    font-size: 2rem;
+    margin: 0;
+}
+
+#showcase p{
+    font-size: 1.15rem;
+    margin: 1.6rem 0;
+    max-width: 500px;
+}
+
+#showcase .queroSerAluno{
+    background: #02B875;
+    width: 200px;
+    margin-top: 5px;
+}
+
+#showcase .link:hover{
+    background: rgba(2, 184, 117, 0.8);
+    transition: background .5s;
+}
+
+/************************************* Showcase - Desktop *****************************************/
+
+@media (min-width: 768px){  
+
+    #showcase{
+        background: #1F4CCA url("../img/bg-showcase.png") repeat-x;
+        background-position: bottom;
+        background-size: contain;
+    }
+
+    #showcase{
+        padding-bottom: 0;
+    }
+
+    #showcase .container{
+        background-image: url("../img/venci-md.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    #showcase .chamadaPrincipal{
+        width: 50%;
+        text-align: left;
+        align-items: flex-start;
+        margin-top: 35px;
+    }
+
+    #showcase h1{
+        font-size: 1.9rem;
+    }
+
+    #showcase p{
+        font-size: 1rem;
+    }
+
+    @media (min-width: 801px){
+        #showcase h1{
+            padding-top: .5rem;
+        }       
+    }
+
+    @media (min-width: 1024px){
+        #showcase h1{
+            padding-top: 2.5rem;
+        } 
+
+        #showcase p{
+            font-size: 1.15rem;
+        }
+
+        #showcase, #showcase .container{
+            height: 500px;
+        }
+    }
+
+    @media (min-width: 1200px){
+
+
+        #showcase .container{
+            background-image: url("../img/venci-lg.png");
+        }
+        #showcase, #showcase .container{
+            height: 550px;
+        }
+    }
+
+}

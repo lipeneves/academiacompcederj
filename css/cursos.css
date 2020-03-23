@@ -1,0 +1,115 @@
+/************************************* Seção Cursos - Mobile *****************************************/
+
+#cursos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.listaDeCursos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#cursos h2.titulo{
+    font-weight: normal;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 35px 0;
+    color: #4a535a;
+}
+
+#cursos .box img.chapeuFormatura{
+    display: none;
+}
+
+#cursos .box{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    padding: 30px 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 .5em rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+@media (min-width: 675px){
+    #cursos .box{
+        width: 49%;
+    }
+}
+
+#cursos .box h3.titulo{
+    color: #0e7dac;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+#cursos .box h4{
+    color: #4d4d4d;
+    text-align: center;
+}
+
+#cursos .box h5{
+    line-height: 2rem;
+    font-size: 0.9rem;
+}
+
+#cursos .box .parcelas{
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+#cursos .box .aPrazo{
+    color: #4d4d4d;
+    font-size: 1.85rem;
+    font-weight: bold;
+}
+
+#cursos .box .aVista{
+    color: #4d4d4d;
+    font-weight: normal;
+    font-size: 1rem;
+    padding-bottom: 15px;
+}
+
+#cursos .box .conteudo{
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+#cursos a.materia{
+    line-height: 2rem;
+    color: #4d4d4d;
+    background-color: transparent;
+    display: block;
+    padding-left: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#cursos a.materia:hover{
+    text-decoration: underline;
+}
+
+#cursos .saibaMais{
+    background: #0e7dac;
+    color: white;
+    width: 110px;
+    margin-top: 10px;
+    padding: .7rem 1.2rem;
+}
+
+/************************************* Seção Cursos - Desktop *****************************************/
+
+@media (min-width: 1100px){
+
+    #cursos .box{
+        width: 32%;
+    }
+}

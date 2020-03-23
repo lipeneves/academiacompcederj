@@ -8,6 +8,7 @@
 body{
     font-family: 'Ubuntu', sans-serif;
     font-size: 1rem;
+    background: #f5f6fd;
 }
 
 .container{
@@ -134,8 +135,6 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #f5f6fd;
-    padding-bottom: 40px;
 }
 
 .listaDeCursos{
@@ -237,7 +236,7 @@ body{
     padding: .7rem 1.2rem;
 }
 
-/************************************* Seção Cursos - Mobile *****************************************/
+/************************************* Seção Newsletter - Mobile *****************************************/
 
 #newsletter{
     background: #0e7dac;
@@ -252,15 +251,23 @@ body{
     align-items: center;
 }
 
+#newsletter form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 #newsletter .btn-inscrevaSe{
     background: #02B875;
     border: none;
     border-radius: 0 5px 5px 0;
     color: white;
-    text-transform: uppercase;
     font-weight: bold;
     padding: .5rem;
     box-sizing: border-box;
+    line-height: 1.2rem;
+    font-size: .8rem;
 }
 
 #newsletter .btn-inscrevaSe:hover{
@@ -285,13 +292,48 @@ body{
 
 #newsletter fieldset{
     border: none;
-    width: 80%;
 }
 
 #newsletter fieldset legend{
     text-align: center;
-    margin: 0 auto;
 }
+
+/************************************* Seção Sobre - Mobile *****************************************/
+
+#sobre{
+    background: #fff;
+}
+
+#sobre .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sobre .video-sobre{
+    width: 100%;
+    height: 100%;
+    border: .7rem solid white;
+    box-sizing: border-box;
+    box-shadow: 0 0 .5em rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+}
+
+#sobre h2.titulo{
+    font-weight: normal;
+    text-align: center;
+    color: #4a535a;
+}
+
+#sobre .box{
+    
+}
+
+#sobre .box .titulo{
+    font-size: 1rem;
+}
+
+
 
 /*********************************** Cabeçalho - Desktop **************************************/
 

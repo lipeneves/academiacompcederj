@@ -21,7 +21,12 @@
     <script src="js/libs/fontawesome.js"></script>
 
     <!-- Meus estilos -->
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/cabecalho.css">
+    <link rel="stylesheet" href="css/showcase.css">
+    <link rel="stylesheet" href="css/cursos.css">
+    <link rel="stylesheet" href="css/newsletter.css">
+    <link rel="stylesheet" href="css/sobre.css">
 
     <link rel="shortcut icon" href="img/favicon.png" type="image/png">
 
@@ -123,9 +128,6 @@
                 </section>
 
                 <section id="periodo2" class="box">
-
-
-
                     <h3 class="titulo">2º Período</h3>
                     <h3 class="aPrazo" style="opacity: .5;"><span class="parcelas"></span>Em breve</h3>
                     <h3 class="aVista" style="opacity: 0;">à vista R$360</h3>
@@ -267,24 +269,89 @@
 
     <section id="newsletter">
         <div class="container">
-            <fieldset>
-                <legend for="email">COLOQUE SEU E-MAIL E RECEBA NOVIDADES SOBRE <strong>LANÇAMENTOS</strong> E
-                    <strong>PROMOÇÕES</strong></legend>
-                <div class="campoEmail">
-                    <input type="email" id="email-newsletter" name="email-newsletter" class="email-newsletter">
-                    <button type="submit" class="btn-inscrevaSe">Enviar</button>
-                </div>
-            </fieldset>
+            <form action="#">
+                <fieldset>
+                    <legend for="email">COLOQUE SEU E-MAIL E RECEBA NOVIDADES SOBRE <strong>LANÇAMENTOS</strong> E
+                        <strong>PROMOÇÕES</strong></legend>
+                    <div class="campoEmail">
+                        <input type="email" id="email-newsletter" name="email-newsletter" class="email-newsletter">
+                        <input type="submit" class="btn-inscrevaSe" value="ENVIAR"></input>
+                    </div>
+                </fieldset>
+            </form>
         </div>
     </section>
 
-    <section>
-        
+    <section id="sobre">
+        <div class="container">
+            
+            <iframe class="video-sobre" src="https://www.youtube.com/embed/lJFORENFT18" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+            
+            <h2 class="titulo">
+                <strong>Por que estudar na Academia CompCEDERJ?</strong><br>
+                Este curso foi totalmente elaborado pensando em você
+            </h2>
+            
+            <ul>
+                <li class="box">
+                    <h5 class="titulo">
+                        Acesso Ilimitado
+                    </h5>
+                    <p>
+                        Estude o que quiser, quando quiser, 24 horas por dia, 7 dias por semana. Devore o conteúdo na sua própria velocidade e ritmo.
+                    </p>
+                </li>
+                <li class="box">
+                    <h5 class="titulo">
+                        Didática e Experiência
+                    </h5>
+                    <p>
+                        Todo conteúdo é pensado para que você consiga evoluir o mais rápido possível.
+                    </p>
+                </li>
+                <li class="box">
+                    <h5 class="titulo">
+                        Suporte Intensivo
+                    </h5>
+                    <p>
+                        Em qualquer aula você encontrará uma forma de ter acesso direto conosco, para tirar quaisquer dúvidas!
+                    </p>
+                </li>
+                <li class="box">
+                    <h5 class="titulo">
+                        EAD Hotmart
+                    </h5>
+                    <p>
+                        Estude com a EAD Hotmart customizada pela Academia CompCEDERJ. Totalmente otimizada para você aprender até 10x mais rápido.
+                    </p>
+                </li>
+                <li class="box">
+                    <h5 class="titulo">
+                        Dados protegidos
+                    </h5>
+                    <p>
+                        Compre sem informar seus dados financeiros para loja, através da plataforma de pagamentos HotPay
+                    </p>
+                </li>
+                <li class="box">
+                    <h5 class="titulo">
+                        Totalmente On-Demand
+                    </h5>
+                    <p>
+                        Assista o conteúdo do seu computador, tablet ou celular. Troque entre eles como desejar, com uma única conta.
+                    </p>
+                </li>
+            </ul>
+        </div>
     </section>
 
+    <!-- Scripts Externos -->
     <script src="js/libs/jquery.js"></script>
     <script src="js/libs/html5shiv.js"></script>
 
+    <!-- Meus scripts -->
     <script src="js/menu.js"></script>
 
 </body>

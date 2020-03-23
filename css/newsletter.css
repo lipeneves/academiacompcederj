@@ -1,0 +1,61 @@
+/************************************* Seção Newsletter - Mobile *****************************************/
+
+#newsletter{
+    background: #0e7dac;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#newsletter .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#newsletter form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#newsletter .btn-inscrevaSe{
+    background: #02B875;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    color: white;
+    font-weight: bold;
+    padding: .5rem;
+    box-sizing: border-box;
+    line-height: 1.2rem;
+    font-size: .8rem;
+}
+
+#newsletter .btn-inscrevaSe:hover{
+    cursor: pointer;
+}
+
+#newsletter .campoEmail{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+#newsletter .campoEmail .email-newsletter{
+    border: none;
+    border-radius: 5px 0 0 5px;
+    padding: .5rem;
+    width: 85%;
+    max-width: 380px;
+}
+
+#newsletter fieldset{
+    border: none;
+}
+
+#newsletter fieldset legend{
+    text-align: center;
+}
