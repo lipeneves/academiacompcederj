@@ -22,25 +22,29 @@
     flex-direction: column;
 }
 
+#rodape .redes-sociais img{
+    width: 40px;
+}
+
 #rodape .redes-sociais h2{
-    font-size: 1rem;
+    font-size: .85rem;
     margin-bottom: 15px;
     transition: color .5s;
 }
 
 #rodape .redes-sociais h2:hover{
     color: white;
- 
+    cursor: default;
 }
 
 #rodape .redes-sociais .lista-redes{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 #rodape .logo-rodape img{
     display: block;
-    max-width: 250px;
+    max-width: 200px;
 }
 
 #rodape .rodape-itens img{
@@ -59,12 +63,13 @@
 #rodape .copyright p{
     text-align: center;
     transition: color .5s;
+    font-size: .85rem;
 }
 
 #rodape .copyright p:hover{
-    text-align: center;
     color: white;
     transition: color .5s;
+    cursor: default;
 }
 
 @media (min-width: 970px){  
@@ -72,7 +77,7 @@
         flex-direction: row;
     }
 
-    #rodape .copyright{
+    #rodape .copyright p{
         text-align: right;
     }
 }

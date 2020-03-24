@@ -10,6 +10,10 @@
     <meta name="robots" content="index, follow">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <meta name="theme-color" content="#1F4CCA">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#1F4CCA">
+    <meta name="msapplication-navbutton-color" content="#1F4CCA">
+
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700,700i&display=swap" rel="stylesheet">
 
     <!--[if lt IE 9]>
@@ -19,6 +23,8 @@
     <!-- Estilos externos -->
     <link rel="stylesheet" href="css/libs/normalize.css">
     <script src="js/libs/fontawesome.js"></script>
+    <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
+
 
     <!-- Meus estilos -->
     <link rel="stylesheet" href="css/all.css">
@@ -26,13 +32,14 @@
     <link rel="stylesheet" href="css/showcase.css">
     <link rel="stylesheet" href="css/cursos.css">
     <link rel="stylesheet" href="css/newsletter.css">
+    <link rel="stylesheet" href="css/chamadaDeVideo.css">
     <link rel="stylesheet" href="css/sobre.css">
     <link rel="stylesheet" href="css/contato-home.css">
     <link rel="stylesheet" href="css/rodape.css">
 
     <link rel="shortcut icon" href="img/favicon.png" type="image/png">
 
-    <title>Academia CompCEDERJ: Reforço Academico para alunos de Sistemas de Computação do CEDERJ</title>
+    <title>Academia CompCEDERJ: Reforço Acadêmico para alunos de Sistemas de Computação do CEDERJ</title>
 
 </head>
 
@@ -43,7 +50,7 @@
 
             <div class="container">
 
-                <img src="img/logo.svg" alt="Academia CompCEDERJ" class="menuPrincipal-logo">
+                <a href="index.html"><img src="img/logo.svg" alt="Academia CompCEDERJ" class="menuPrincipal-logo"></a>
 
                 <button class="btn-menu"><i class="fas fa-bars fa-2x"></i></button>
 
@@ -59,10 +66,11 @@
                             <a class="menuPrincipal-link" href="#cursos"><i class="fas fa-graduation-cap"></i>Cursos</a>
                         </li>
                         <li class="menuPrincipal-list-item">
-                            <a class="menuPrincipal-link" href="https://www.facebook.com/academiacompcederj" target="_blank"><i class="fas fa-envelope"></i>Contato</a>
+                            <a class="menuPrincipal-link" href="https://www.facebook.com/academiacompcederj"
+                                target="_blank"><i class="fas fa-envelope"></i>Contato</a>
                         </li>
                         <li class="menuPrincipal-list-item">
-                            <a class="menuPrincipal-link btn-areaDoAluno" href="#"><i
+                            <a class="menuPrincipal-link btn-areaDoAluno" href="area-do-aluno.html"><i
                                     class="fas fa-user-friends"></i>Área do Aluno</a>
                         </li>
                     </ul>
@@ -84,23 +92,34 @@
                     dicas sobre o mercado de trabalho!
                 </p>
 
-                <a href="" class="btn queroSerAluno">Quero ser um aluno</a>
+                <a href="#newsletter" class="btn queroSerAluno">Quero ser um aluno</a>
             </div>
 
         </div>
     </section>
 
-    <section id="sobre">
+    <section id="chamadaDeVideo">
         <div class="container">
 
-            
-            <h2 class="titulo">
-               <strong>Por que estudar na Academia CompCEDERJ?</strong><br>
-               Conteúdos como você sempre sonhou...
-            </h2>
-            
+            <div class="titulo">
+                <h2 class="pq">Não fique perdido nas aulas da faculdade</h2>
+                <p class="vamosTeAjudar">Vamos te ajudar a entender aquela matéria que tira o seu sono!</p>
+            </div>
+
             <div class="video-sobre">
-                <iframe src="https://www.youtube.com/embed/lJFORENFT18" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/7X8II6J-6mU" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <hr style="border: 1px solid #ddd;">
+
+    <section id="sobre">
+        <div class="container">
+            <div class="titulo">
+                <h2 class="pq">Por que estudar na Academia CompCEDERJ?</h2>
             </div>
 
             <ul class="diferenciais">
@@ -111,7 +130,7 @@
                         Acesso Ilimitado
                     </h5>
                     <p>
-                        Estude o que quiser, quando quiser, 24 horas por dia, 7 dias por semana. Na
+                        Estude quando quiser, 24 horas por dia, 7 dias por semana. Na
                         sua própria velocidade e ritmo.
                     </p>
                 </li>
@@ -119,10 +138,11 @@
                     <img class="img-sobre" src="img/sobre2.png" alt="Didática e Experiência">
 
                     <h5 class="titulo">
-                        Didática e Experiência
+                        Garantia Incondicional de 7 dias
                     </h5>
                     <p>
-                        Todo conteúdo é pensado para que você consiga evoluir o mais rápido possível.
+                        Dentro desse prazo, você pode pedir seu dinheiro de volta por qualquer motivo e nós te
+                        devolveremos.
                     </p>
                 </li>
                 <li class="box">
@@ -143,7 +163,7 @@
                         EAD Hotmart
                     </h5>
                     <p>
-                        Estude com a plataforma EAD da Hotmart customizada por nós para você
+                        Estude com a plataforma EAD da Hotmart customizada para você
                         aprender até 10x mais rápido.
                     </p>
                 </li>
@@ -164,8 +184,7 @@
                         Totalmente On-Demand
                     </h5>
                     <p>
-                        Assista o conteúdo do seu computador, tablet ou celular. Troque entre eles como desejar, com uma
-                        única conta.
+                        Assista o conteúdo do seu computador, tablet ou celular. Troque entre eles quando desejar.
                     </p>
                 </li>
             </ul>
@@ -174,16 +193,29 @@
 
     <section id="newsletter">
         <div class="container">
-            <form action="#">
+
+            <form action="https://app.convertkit.com/forms/1275672/subscriptions"
+                class="seva-form formkit-form msg-Sucesso" method="post" data-sv-form="1275672" data-uid="40d65f8c7f"
+                data-version="5"
+                data-options="{&quot;settings&quot;:{&quot;after_subscribe&quot;:{&quot;action&quot;:&quot;message&quot;,&quot;success_message&quot;:&quot;Sucesso! Agora verifique seu e-mail para confirmar sua assinatura.&quot;,&quot;redirect_url&quot;:&quot;&quot;},&quot;analytics&quot;:{&quot;google&quot;:null,&quot;facebook&quot;:null,&quot;segment&quot;:null,&quot;pinterest&quot;:null},&quot;modal&quot;:{&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15},&quot;powered_by&quot;:{&quot;show&quot;:true,&quot;url&quot;:&quot;https://convertkit.com?utm_source=dynamic&amp;utm_medium=referral&amp;utm_campaign=poweredby&amp;utm_content=form&quot;},&quot;recaptcha&quot;:{&quot;enabled&quot;:false},&quot;return_visitor&quot;:{&quot;action&quot;:&quot;show&quot;,&quot;custom_content&quot;:&quot;&quot;},&quot;slide_in&quot;:{&quot;display_in&quot;:&quot;bottom_right&quot;,&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15},&quot;sticky_bar&quot;:{&quot;display_in&quot;:&quot;top&quot;,&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15}},&quot;version&quot;:&quot;5&quot;}"
+                min-width="400 500 600 700 800">
                 <fieldset>
                     <legend for="email">DIGITE SEU E-MAIL E RECEBA NOVIDADES SOBRE <strong>LANÇAMENTOS</strong> E
                         <strong>PROMOÇÕES</strong></legend>
-                    <div class="campoEmail">
-                        <input type="email" id="email-newsletter" name="email-newsletter" class="email-newsletter">
-                        <input type="submit" class="btn-inscrevaSe" value="ENVIAR"></input>
+                    <ul class="formkit-alert formkit-alert-error" data-element="errors" data-group="alert"></ul>
+                    <div data-element="fields" data-stacked="false" class="seva-fields formkit-fields">
+                        <div class="formkit-field campoEmail">
+                            <input class="formkit-input email-newsletter" name="email_address"
+                                placeholder="Digite seu email" required="" type="email">
+                            <input type="submit" data-element="submit"
+                                class="formkit-submit formkit-submit btn-inscrevaSe" value="CADASTRAR"></input>
+                        </div>
+
                     </div>
+
                 </fieldset>
             </form>
+
         </div>
     </section>
 
@@ -204,7 +236,8 @@
 
                     <div class="conteudo">
                         <h3 class="titulo">1º Período</h3>
-                        <h3 class="aPrazo" style="opacity: .5; text-align: center;"><span class="parcelas"></span>Em breve</h3>
+                        <h3 class="aPrazo" style="opacity: .5; text-align: center;"><span class="parcelas"></span>Em
+                            breve</h3>
                     </div>
 
                     <div class="conteudo">
@@ -368,8 +401,9 @@
         <div class="container">
             <p><strong>Faltou alguma coisa?</strong></p>
             <p>Sinta-se a vontade de nos enviar suas perguntas</p>
-    
-            <a class="btn link" href="https://www.facebook.com/academiacompcederj" target="_blank"><strong>Entrar em contato</strong></a>
+
+            <a class="btn link" href="https://www.facebook.com/academiacompcederj" target="_blank"><strong>Entrar em
+                    contato</strong></a>
         </div>
     </section>
 
@@ -380,7 +414,7 @@
                 <div class="redes-sociais rodape-lista-item">
                     <h2>NOSSAS REDES SOCIAIS</h2>
                     <ul class="lista-redes">
-                        
+
                         <li>
                             <a href="https://www.facebook.com/academiacompcederj" target="_blank">
                                 <img src="img/facebook.png" alt="Facebook">
@@ -396,7 +430,7 @@
                                 <img src="img/instagram.png" alt="Instagram">
                             </a>
                         </li>
-                    </li>
+                        </li>
                 </div>
 
                 <div class="logo-rodape rodape-lista-item">
@@ -405,7 +439,7 @@
 
                 <div class="copyright rodape-lista-item">
                     <p>© 2020 Academia CompCEDERJ<br>
-                    Todos os Direitos Reservados</p>
+                        Todos os Direitos Reservados</p>
                 </div>
             </section>
         </div>
@@ -413,7 +447,6 @@
 
     <!-- Scripts Externos -->
     <script src="js/libs/jquery.js"></script>
-    <script src="js/libs/html5shiv.js"></script>
 
     <!-- Meus scripts -->
     <script src="js/menu.js"></script>

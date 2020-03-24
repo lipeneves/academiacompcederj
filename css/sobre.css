@@ -11,59 +11,19 @@
     align-items: center;
 }
 
-#sobre .video-sobre{
-    position: relative;
-    width: 100%;
-    max-width: 100%;
-    padding-bottom: 56.25%;
-    margin-bottom: 50px; 
-    height: 0;
-    border: 10px solid white;
-    box-shadow: 0 0 .5em rgba(0, 0, 0, 0.2);
-    box-sizing: border-box;
-}
-
-@media (min-width: 640px){
-    #sobre .video-sobre{
-        width: 80%;
-        padding-bottom: 43.25%; 
-    }
-}
-
-@media (min-width: 800px){
-    #sobre .video-sobre{
-        width: 70%;
-        padding-bottom: 37.25%; 
-    }
-}
-
-#sobre .video-sobre iframe{
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-}
-
 #sobre .img-sobre{
     display: block;
     margin: 0 auto 20px auto;
     max-height: 58px;
 }
 
-#sobre h2.titulo{
-    font-weight: normal;
+#sobre h2.pq{
     text-align: center;
     color: #4a535a;
-    margin: 35px 0;
 }
 
-
-@media (min-width: 425px){
-    #sobre .video-sobre{
-        border: 15px solid white; 
-    }
+#sobre div.titulo{
+    margin: 35px 0;
 }
 
 #sobre p{
@@ -89,7 +49,7 @@
     margin-bottom: 25px;
 }
 
-@media (min-width: 640px){
+@media (min-width: 680px){
     #sobre .diferenciais .box{
         width: 49%;
         max-width: 325px;
@@ -102,7 +62,7 @@
 }
 
 
-/************************************* Seção Sobre - Mobile *****************************************/
+/************************************* Seção Sobre - Desktop *****************************************/
 
 @media (min-width: 1024px){
     #sobre .diferenciais .box{
@@ -111,10 +71,14 @@
 }
 
 @media (min-width: 1250px){
-    #sobre h2.titulo{
+    #sobre h2{
         font-size: 1.8rem;
+    }
+    
+    #sobre div.titulo{
         margin: 50px 0;
     }
+
     #sobre .diferenciais .box{
         width: 33%;
         box-sizing: content-box;
