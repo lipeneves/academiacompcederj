@@ -7,6 +7,7 @@
 
 html{
     scroll-behavior: smooth;
+    max-width: 100%;
 }
 
 body{
@@ -35,4 +36,17 @@ body{
     opacity: 0.5;
     cursor: default;
     pointer-events: none;
+}
+
+.atual{
+    font-weight: bold;
+}
+
+.destaque{
+    color: orange;
+}
+
+.icone{
+    font-size: 60px;
+    margin-bottom: 20px;
 }

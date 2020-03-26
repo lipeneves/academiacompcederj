@@ -38,7 +38,7 @@
 #sobre .diferenciais{
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 #sobre .diferenciais .box{

@@ -1,0 +1,37 @@
+#sugestao{
+    
+    background: #153368;
+    color: #eee;
+    padding: 45px 0 60px 0;
+}
+
+#sugestao .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sugestao h2{
+    text-align: center;
+    font-size: 19px;
+    max-width: 740px;
+}
+
+@media (min-width: 680px){
+
+    #sugestao{
+        padding: 70px 0 85px 0;
+    }
+
+    #sugestao h2{
+        font-size: 1.5rem;
+        line-height: 1.9rem;
+    }
+}
+
+#sugestao .email-contato{
+    text-decoration: underline;
+}
+
+
+

@@ -10,9 +10,9 @@
     <meta name="robots" content="index, follow">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <meta name="theme-color" content="#1F4CCA">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#1F4CCA">
-    <meta name="msapplication-navbutton-color" content="#1F4CCA">
+    <meta name="theme-color" content="#0253a2">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0253a2">
+    <meta name="msapplication-navbutton-color" content="#0253a2">
 
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700,700i&display=swap" rel="stylesheet">
 
@@ -29,6 +29,7 @@
     <!-- Meus estilos -->
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/cabecalho.css">
+    <link rel="stylesheet" href="css/container-titulo.css">
     <link rel="stylesheet" href="css/area-do-aluno.css">
     <link rel="stylesheet" href="css/rodape.css">
 
@@ -43,58 +44,69 @@
     <div id="tudo">
         <header class="cabecalho">
             <div class="topo">
-    
+
                 <div class="container">
-    
-                    <a href="index.html"><img src="img/logo.svg" alt="Academia CompCEDERJ" class="menuPrincipal-logo"></a>
-    
+
+                    <a href="https://www.academiacompcederj.com.br">
+                        <img src="img/logo.svg" alt="Academia CompCEDERJ" class="menuPrincipal-logo">
+                    </a>
+
                     <button class="btn-menu"><i class="fas fa-bars fa-2x"></i></button>
-    
+
                 </div>
-    
+
                 <nav class="menuPrincipal">
                     <div class="container">
                         <ul class="menuPrincipal-list">
                             <li class="menuPrincipal-list-item">
-                                <a class="menuPrincipal-link" href="index.html"><i class="icone fas fa-home"></i>Home</a>
+                                <a class="menuPrincipal-link" href="https://www.academiacompcederj.com.br"><i
+                                        class="fas fa-home"></i>Home</a>
                             </li>
                             <li class="menuPrincipal-list-item">
-                                <a class="menuPrincipal-link" href="#cursos"><i class="fas fa-graduation-cap"></i>Cursos</a>
+                                <a class="menuPrincipal-link" href="#"><i class="fas fa-graduation-cap"></i>Como
+                                    Funciona</a>
                             </li>
                             <li class="menuPrincipal-list-item">
-                                <a class="menuPrincipal-link" href="https://www.facebook.com/academiacompcederj"
-                                    target="_blank"><i class="fas fa-envelope"></i>Contato</a>
+                                <a class="menuPrincipal-link" href="https://www.academiacompcederj.com.br/contato"><i
+                                        class="fas fa-comments"></i>Contato</a>
                             </li>
                             <li class="menuPrincipal-list-item">
-                                <a class="menuPrincipal-link btn-areaDoAluno" href="#"><i
-                                        class="fas fa-user-friends"></i>Área do Aluno</a>
+                                <a class="menuPrincipal-link btn-areaDoAluno atual"
+                                    href="https://www.academiacompcederj.com.br/area-do-aluno"><i
+                                        class="fas fa-user-graduate"></i>Área do Aluno</a>
                             </li>
                         </ul>
                     </div>
                 </nav>
-    
+
             </div>
         </header>
-    
-        <section id="cursos">
-    
+
+        <div class="container-titulo">
             <div class="container">
-                <h2 class="titulo">
-                    <strong>ÁREA DO ALUNO</strong>
-                    <br>
-                    Atenção: Cada período possui sua própria área de aluno
-                </h2>
-    
+                <i class="fas fa-user-graduate icone"></i>
+                <h2 class="titulo">Área do Aluno</h2>
+                <p class="subtitulo"><span class="destaque">Atenção:</span> Cada período possui sua própria área de
+                    aluno</p>
+            </div>
+        </div>
+
+        <section id="area-do-aluno">
+
+
+
+            <div class="container">
+
                 <div class="listaDeCursos">
                     <section id="periodo1" class="box">
                         <!-- <h3 class="titulo">1º Período</h3>
                         <h3 class="aPrazo"><span class="parcelas">6x</span> R$60</h3>
                         <h3 class="aVista">à vista R$360</h3> -->
-    
+
                         <div class="conteudo">
                             <h3 class="titulo">1º Período</h3>
                         </div>
-    
+
                         <div class="conteudo">
                             <h5>Disciplinas</h5>
                             <ul>
@@ -103,7 +115,7 @@
                                 <li><a href="" class="materia">Projeto e Desenvolvimento de Algoritmos</a></li>
                             </ul>
                         </div>
-    
+
                         <div class="conteudo">
                             <h5>Bônus</h5>
                             <ul>
@@ -111,13 +123,14 @@
                                 <li><a href="" class="materia">Construção de Páginas Responsivas</a></li>
                             </ul>
                         </div>
-    
-                        <a href="http://periodo1.academiacompcederj.com.br/" class="btn saibaMais" style="width: 90%;">Acessar 1º Período no Hotmart</a>
+
+                        <a href="http://periodo1.academiacompcederj.com.br/" class="btn saibaMais"
+                            style="width: 90%;">Acessar 1º Período no Hotmart</a>
                     </section>
-    
+
                     <section id="periodo2" class="box">
                         <h3 class="titulo">2º Período</h3>
-    
+
                         <div class="conteudo">
                             <h5>Disciplinas</h5>
                             <ul>
@@ -127,7 +140,7 @@
                                 <li><a href="" class="materia">Álgebra Linear</a></li>
                             </ul>
                         </div>
-    
+
                         <div class="conteudo">
                             <h5>Bônus</h5>
                             <ul>
@@ -135,13 +148,13 @@
                                 <li><a href="" class="materia">Álgebra Linear com Python</a></li>
                             </ul>
                         </div>
-    
+
                         <a href="" class="btn saibaMais inativo" style="width: 90%;">Acessar 2º Período no Hotmart</a>
                     </section>
-    
+
                     <section id="periodo3" class="box">
                         <h3 class="titulo">3º Período</h3>
-    
+
                         <div class="conteudo">
                             <h5>Disciplinas</h5>
                             <ul>
@@ -151,7 +164,7 @@
                                 <li><a href="" class="materia">Programação com Interfaces Gráficas</a></li>
                             </ul>
                         </div>
-    
+
                         <div class="conteudo">
                             <h5>Bônus</h5>
                             <ul>
@@ -159,13 +172,13 @@
                                 <li><a href="" class="materia">A definir</a></li>
                             </ul>
                         </div>
-    
+
                         <a href="" class="btn saibaMais inativo" style="width: 90%;">Acessar 3º Período no Hotmart</a>
                     </section>
-    
+
                     <section id="periodo4" class="box">
                         <h3 class="titulo">4º Período</h3>
-    
+
                         <div class="conteudo">
                             <h5>Disciplinas</h5>
                             <ul>
@@ -176,7 +189,7 @@
                                 <li><a href="" class="materia">Programação Orientada a Objetos</a></li>
                             </ul>
                         </div>
-    
+
                         <div class="conteudo">
                             <h5>Bônus</h5>
                             <ul>
@@ -184,13 +197,13 @@
                                 <li><a href="" class="materia">A definir</a></li>
                             </ul>
                         </div>
-    
+
                         <a href="" class="btn saibaMais inativo" style="width: 90%;">Acessar 4º Período no Hotmart</a>
                     </section>
-    
+
                     <section id="periodo5" class="box">
                         <h3 class="titulo">5º Período</h3>
-    
+
                         <div class="conteudo">
                             <h5>Disciplinas</h5>
                             <ul>
@@ -200,7 +213,7 @@
                                 <li><a href="" class="materia">Programação de Aplicações Web</a></li>
                             </ul>
                         </div>
-    
+
                         <div class="conteudo">
                             <h5>Bônus</h5>
                             <ul>
@@ -208,13 +221,13 @@
                                 <li><a href="" class="materia">A definir</a></li>
                             </ul>
                         </div>
-    
+
                         <a href="" class="btn saibaMais inativo" style="width: 90%;">Acessar 5º Período no Hotmart</a>
                     </section>
-    
+
                     <section id="periodo6" class="box">
                         <h3 class="titulo">6º Período</h3>
-    
+
                         <div class="conteudo">
                             <h5>Disciplinas</h5>
                             <ul>
@@ -225,7 +238,7 @@
                                 <li><a href="" class="materia">Computação Gráfica</a></li>
                             </ul>
                         </div>
-    
+
                         <div class="conteudo">
                             <h5>Bônus</h5>
                             <ul>
@@ -233,23 +246,23 @@
                                 <li><a href="" class="materia">A definir</a></li>
                             </ul>
                         </div>
-    
+
                         <a href="" class="btn saibaMais inativo" style="width: 90%;">Acessar 6º Período no Hotmart</a>
                     </section>
                 </div>
-    
+
             </div>
-    
+
         </section>
-    
+
         <footer id="rodape">
             <div class="container">
                 <section class="rodape-itens">
-    
+
                     <div class="redes-sociais rodape-lista-item">
                         <h2>NOSSAS REDES SOCIAIS</h2>
                         <ul class="lista-redes">
-    
+
                             <li>
                                 <a href="https://www.facebook.com/academiacompcederj" target="_blank">
                                     <img src="img/facebook.png" alt="Facebook">
@@ -265,13 +278,13 @@
                                     <img src="img/instagram.png" alt="Instagram">
                                 </a>
                             </li>
-                            </li>
+                        </ul>
                     </div>
-    
+
                     <div class="logo-rodape rodape-lista-item">
                         <a href="#"><img src="img/logo-rodape.png" alt="Logo Academia CompCEDERJ"></a>
                     </div>
-    
+
                     <div class="copyright rodape-lista-item">
                         <p>© 2020 Academia CompCEDERJ<br>
                             Todos os Direitos Reservados</p>

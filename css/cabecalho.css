@@ -3,14 +3,8 @@
 .topo{
     display: flex;
     align-items: center;
-    background: #1F4CCA;
+    background: #0253a2;
     height: 105px;
-}
-
-.chamadaPrincipal{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .topo .container{
@@ -39,7 +33,7 @@
 
 .menuPrincipal-link{
     display: block;
-    color: #1F4CCA;
+    color: #0253a2;
     text-transform: uppercase;
     padding: 11px 0;
     border-bottom: 1px solid #ddd;
@@ -108,12 +102,12 @@
         border: 1px solid #eee;
         border-radius: 7px;
         padding: 10px;
-        background: #2F62D3;
+        background: #0a5fa5;
         transition: background .7s;
     }
 
     .btn-areaDoAluno:hover{
         background: #eee;
-        color: #1F4CCA;
+        color: #0a5fa5;
         transition: background .7s;
     }

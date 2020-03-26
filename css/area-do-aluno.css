@@ -1,20 +1,22 @@
 /************************************* Seção Cursos - Mobile *****************************************/
 
-#cursos{
+
+
+#area-do-aluno{
     display: flex;
     flex-direction: column;
     align-items: center;
     background: #f5f6fd;
-    padding-bottom: 50px;
+    padding: 50px 0;
 }
 
-.listaDeCursos{
+#area-do-aluno .listaDeCursos{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-#cursos h2.titulo{
+#area-do-aluno h2.titulo{
     
     font-weight: normal;
     font-size: 1.5rem;
@@ -23,11 +25,11 @@
     color: #4a535a;
 }
 
-#cursos .box img.chapeuFormatura{
+#area-do-aluno .box img.chapeuFormatura{
     display: none;
 }
 
-#cursos .box{
+#area-do-aluno .box{
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -41,12 +43,12 @@
 }
 
 @media (min-width: 680px){
-    #cursos .box{
+    #area-do-aluno .box{
         width: 49%;
     }
 }
 
-#cursos .box h3.titulo{
+#area-do-aluno .box h3.titulo{
     text-transform: uppercase;
     color: #0e7dac;
     text-align: center;
@@ -54,12 +56,12 @@
     margin-bottom: 15px;
 }
 
-#cursos .box h4{
+#area-do-aluno .box h4{
     color: #4d4d4d;
     text-align: center;
 }
 
-#cursos .box h5{
+#area-do-aluno .box h5{
     line-height: 2rem;
     font-size: 0.9rem;
 }
@@ -69,25 +71,25 @@
     font-weight: normal;
 }
 
-#cursos .box .aPrazo{
+#area-do-aluno .box .aPrazo{
     color: #4d4d4d;
     font-size: 1.85rem;
     font-weight: bold;
 }
 
-#cursos .box .aVista{
+#area-do-aluno .box .aVista{
     color: #4d4d4d;
     font-weight: normal;
     font-size: 1rem;
     padding-bottom: 15px;
 }
 
-#cursos .box .conteudo{
+#area-do-aluno .box .conteudo{
     width: 100%;
     padding-bottom: 15px;
 }
 
-#cursos a.materia{
+#area-do-aluno a.materia{
     line-height: 2rem;
     color: #4d4d4d;
     background-color: transparent;
@@ -98,11 +100,11 @@
     text-overflow: ellipsis;
 }
 
-#cursos a.materia:hover{
+#area-do-aluno a.materia:hover{
     text-decoration: underline;
 }
 
-#cursos .saibaMais{
+#area-do-aluno .saibaMais{
     background: #0e7dac;
     color: white;
     width: 110px;
@@ -110,7 +112,7 @@
     padding: .7rem 1.2rem;
 }
 
-#cursos .saibaMais:hover{
+#area-do-aluno .saibaMais:hover{
     background: rgba(14,125,173,0.75);
     transition: background .5s;
 }
@@ -119,7 +121,7 @@
 
 @media (min-width: 1100px){
 
-    #cursos .box{
+    #area-do-aluno .box{
         width: 32%;
     }
 }

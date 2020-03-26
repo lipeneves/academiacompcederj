@@ -1,20 +1,20 @@
 /************************************* Showcase - Mobile *****************************************/
-
-#showcase, #showcase .container{
-    height: 400px;
-}
-
 #showcase{
-    background: #1F4CCA;
+    background: #0253a2;
     color: #eee;
-    text-align: center;
+    text-align: left;
+    padding-bottom: 55px;
 }
 
 #showcase .container{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+}
+
+#showcase .chamadaPrincipal{
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
 }
 
 #showcase h1{
@@ -25,13 +25,11 @@
 #showcase p{
     font-size: 1.15rem;
     margin: 1.6rem 0;
-    max-width: 500px;
 }
 
 #showcase .queroSerAluno{
     background: #02B875;
     width: 200px;
-    margin-top: 5px;
 }
 
 #showcase .queroSerAluno:hover{
@@ -44,7 +42,7 @@
 @media (min-width: 768px){  
 
     #showcase{
-        background: #1F4CCA url("../img/bg-showcase.png") repeat-x;
+        background: #0253a2 url("../img/bg-showcase.png") repeat-x;
         background-position: bottom;
         background-size: contain;
     }
@@ -60,6 +58,10 @@
         background-position: bottom;
         align-items: flex-start;
         justify-content: flex-start;
+    }
+
+    #showcase, #showcase .container{
+        height: 400px;
     }
 
     #showcase .chamadaPrincipal{

@@ -10,9 +10,9 @@
     <meta name="robots" content="index, follow">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <meta name="theme-color" content="#1F4CCA">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#1F4CCA">
-    <meta name="msapplication-navbutton-color" content="#1F4CCA">
+    <meta name="theme-color" content="#0253a2">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0253a2">
+    <meta name="msapplication-navbutton-color" content="#0253a2">
 
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700,700i&display=swap" rel="stylesheet">
 
@@ -20,11 +20,14 @@
         <script src="js/html5shiv.js"></script>
     <![endif]-->
 
-    <!-- Estilos externos -->
+    <!-- Normalize CSS -->
     <link rel="stylesheet" href="css/libs/normalize.css">
-    <script src="js/libs/fontawesome.js"></script>
-    <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
 
+    <!-- Icones -->
+    <script src="js/libs/fontawesome.js"></script>
+
+    <!-- Script Formulário -->
+    <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
 
     <!-- Meus estilos -->
     <link rel="stylesheet" href="css/all.css">
@@ -50,7 +53,9 @@
 
             <div class="container">
 
-                <a href="index.html"><img src="img/logo.svg" alt="Academia CompCEDERJ" class="menuPrincipal-logo"></a>
+                <a href="https://www.academiacompcederj.com.br">
+                    <img src="img/logo.svg" alt="Academia CompCEDERJ" class="menuPrincipal-logo">
+                </a>
 
                 <button class="btn-menu"><i class="fas fa-bars fa-2x"></i></button>
 
@@ -60,18 +65,21 @@
                 <div class="container">
                     <ul class="menuPrincipal-list">
                         <li class="menuPrincipal-list-item">
-                            <a class="menuPrincipal-link" href="#"><i class="icone fas fa-home"></i>Home</a>
+                            <a class="menuPrincipal-link atual" href="https://www.academiacompcederj.com.br"><i
+                                    class="fas fa-home"></i>Home</a>
                         </li>
                         <li class="menuPrincipal-list-item">
-                            <a class="menuPrincipal-link" href="#cursos"><i class="fas fa-graduation-cap"></i>Cursos</a>
+                            <a class="menuPrincipal-link" href="#"><i class="fas fa-graduation-cap"></i>Como
+                                Funciona</a>
                         </li>
                         <li class="menuPrincipal-list-item">
-                            <a class="menuPrincipal-link" href="https://www.facebook.com/academiacompcederj"
-                                target="_blank"><i class="fas fa-envelope"></i>Contato</a>
+                            <a class="menuPrincipal-link" href="https://www.academiacompcederj.com.br/contato"><i
+                                    class="fas fa-comments"></i>Contato</a>
                         </li>
                         <li class="menuPrincipal-list-item">
-                            <a class="menuPrincipal-link btn-areaDoAluno" href="area-do-aluno.html"><i
-                                    class="fas fa-user-friends"></i>Área do Aluno</a>
+                            <a class="menuPrincipal-link btn-areaDoAluno"
+                                href="https://www.academiacompcederj.com.br/area-do-aluno"><i
+                                    class="fas fa-user-graduate"></i>Área do Aluno</a>
                         </li>
                     </ul>
                 </div>
@@ -107,7 +115,7 @@
             </div>
 
             <div class="video-sobre">
-                <iframe src="https://www.youtube.com/embed/7X8II6J-6mU" frameborder="0"
+                <iframe src="https://www.youtube.com/embed/7X8II6J-6mU"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
@@ -191,24 +199,23 @@
         </div>
     </section>
 
-    <section id="newsletter">
+    <div id="newsletter">
         <div class="container">
 
             <form action="https://app.convertkit.com/forms/1275672/subscriptions"
                 class="seva-form formkit-form msg-Sucesso" method="post" data-sv-form="1275672" data-uid="40d65f8c7f"
                 data-version="5"
-                data-options="{&quot;settings&quot;:{&quot;after_subscribe&quot;:{&quot;action&quot;:&quot;message&quot;,&quot;success_message&quot;:&quot;Sucesso! Agora verifique seu e-mail para confirmar sua assinatura.&quot;,&quot;redirect_url&quot;:&quot;&quot;},&quot;analytics&quot;:{&quot;google&quot;:null,&quot;facebook&quot;:null,&quot;segment&quot;:null,&quot;pinterest&quot;:null},&quot;modal&quot;:{&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15},&quot;powered_by&quot;:{&quot;show&quot;:true,&quot;url&quot;:&quot;https://convertkit.com?utm_source=dynamic&amp;utm_medium=referral&amp;utm_campaign=poweredby&amp;utm_content=form&quot;},&quot;recaptcha&quot;:{&quot;enabled&quot;:false},&quot;return_visitor&quot;:{&quot;action&quot;:&quot;show&quot;,&quot;custom_content&quot;:&quot;&quot;},&quot;slide_in&quot;:{&quot;display_in&quot;:&quot;bottom_right&quot;,&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15},&quot;sticky_bar&quot;:{&quot;display_in&quot;:&quot;top&quot;,&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15}},&quot;version&quot;:&quot;5&quot;}"
-                min-width="400 500 600 700 800">
+                data-options="{&quot;settings&quot;:{&quot;after_subscribe&quot;:{&quot;action&quot;:&quot;message&quot;,&quot;success_message&quot;:&quot;Sucesso! Agora verifique seu e-mail para confirmar sua assinatura.&quot;,&quot;redirect_url&quot;:&quot;&quot;},&quot;analytics&quot;:{&quot;google&quot;:null,&quot;facebook&quot;:null,&quot;segment&quot;:null,&quot;pinterest&quot;:null},&quot;modal&quot;:{&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15},&quot;powered_by&quot;:{&quot;show&quot;:true,&quot;url&quot;:&quot;https://convertkit.com?utm_source=dynamic&amp;utm_medium=referral&amp;utm_campaign=poweredby&amp;utm_content=form&quot;},&quot;recaptcha&quot;:{&quot;enabled&quot;:false},&quot;return_visitor&quot;:{&quot;action&quot;:&quot;show&quot;,&quot;custom_content&quot;:&quot;&quot;},&quot;slide_in&quot;:{&quot;display_in&quot;:&quot;bottom_right&quot;,&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15},&quot;sticky_bar&quot;:{&quot;display_in&quot;:&quot;top&quot;,&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15}},&quot;version&quot;:&quot;5&quot;}">
                 <fieldset>
-                    <legend for="email">DIGITE SEU E-MAIL E RECEBA NOVIDADES SOBRE <strong>LANÇAMENTOS</strong> E
-                        <strong>PROMOÇÕES</strong></legend>
+                    <label for="email">DIGITE SEU E-MAIL E RECEBA NOVIDADES SOBRE <strong>LANÇAMENTOS</strong> E
+                        <strong>PROMOÇÕES</strong></label>
                     <ul class="formkit-alert formkit-alert-error" data-element="errors" data-group="alert"></ul>
                     <div data-element="fields" data-stacked="false" class="seva-fields formkit-fields">
                         <div class="formkit-field campoEmail">
                             <input class="formkit-input email-newsletter" name="email_address"
-                                placeholder="Digite seu email" required="" type="email">
+                                placeholder="Digite seu email" required="" type="email" id="email">
                             <input type="submit" data-element="submit"
-                                class="formkit-submit formkit-submit btn-inscrevaSe" value="CADASTRAR"></input>
+                                class="formkit-submit formkit-submit btn-inscrevaSe" value="CADASTRAR">
                         </div>
 
                     </div>
@@ -217,7 +224,7 @@
             </form>
 
         </div>
-    </section>
+    </div>
 
     <section id="cursos">
 
@@ -399,10 +406,10 @@
 
     <section id="contato-home">
         <div class="container">
-            <p><strong>Faltou alguma coisa?</strong></p>
+            <h4>Faltou alguma coisa?</h4>
             <p>Sinta-se a vontade de nos enviar suas perguntas</p>
 
-            <a class="btn link" href="https://www.facebook.com/academiacompcederj" target="_blank"><strong>Entrar em
+            <a class="btn link" href="https://www.academiacompcederj.com.br/contato"><strong>Entrar em
                     contato</strong></a>
         </div>
     </section>
@@ -416,13 +423,13 @@
                     <ul class="lista-redes">
 
                         <li>
-                            <a href="https://www.facebook.com/academiacompcederj" target="_blank">
-                                <img src="img/facebook.png" alt="Facebook">
+                            <a href="https://www.youtube.com/academiacompcederj" target="_blank">
+                                <img src="img/youtube.png" alt="Youtube">
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.youtube.com/academiacompcederj" target="_blank">
-                                <img src="img/youtube.png" alt="Youtube">
+                            <a href="https://www.facebook.com/academiacompcederj" target="_blank">
+                                <img src="img/facebook.png" alt="Facebook">
                             </a>
                         </li>
                         <li>
@@ -430,7 +437,7 @@
                                 <img src="img/instagram.png" alt="Instagram">
                             </a>
                         </li>
-                        </li>
+                    </ul>
                 </div>
 
                 <div class="logo-rodape rodape-lista-item">
