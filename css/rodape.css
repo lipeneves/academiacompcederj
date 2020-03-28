@@ -26,13 +26,15 @@
     width: 40px;
 }
 
-#rodape .redes-sociais h2{
+#rodape .redes-sociais p{
     font-size: .85rem;
     margin-bottom: 15px;
     transition: color .5s;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
-#rodape .redes-sociais h2:hover{
+#rodape .redes-sociais p:hover{
     color: white;
     cursor: default;
 }

@@ -8,6 +8,18 @@
     padding-bottom: 50px;
 }
 
+#cursos .chamada-periodos{
+    text-align: center;
+    padding: 35px 0;
+    color: #4a535a;
+    text-transform: uppercase;
+}
+
+#cursos .chamada-periodos h2,
+#cursos .chamada-periodos p{
+    font-size: 1.5rem;
+}
+
 .listaDeCursos{
     display: flex;
     flex-wrap: wrap;
@@ -55,12 +67,8 @@
 
 #cursos .box h4{
     color: #4d4d4d;
-    text-align: center;
-}
-
-#cursos .box h5{
+    text-align: left;
     line-height: 2rem;
-    font-size: 0.9rem;
 }
 
 #cursos .box .parcelas{

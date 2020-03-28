@@ -23,66 +23,71 @@
     <!-- Estilos externos -->
     <link rel="stylesheet" href="css/libs/normalize.css">
     <script src="js/libs/fontawesome.js"></script>
-    <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
-
 
     <!-- Meus estilos -->
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/cabecalho.css">
     <link rel="stylesheet" href="css/container-titulo.css">
-    <link rel="stylesheet" href="css/sugestao.css">
     <link rel="stylesheet" href="css/formulario-contato.css">
     <link rel="stylesheet" href="css/rodape.css">
 
     <link rel="shortcut icon" href="img/favicon.png" type="image/png">
 
-    <title>Academia CompCEDERJ | Área do Aluno</title>
+    <title>Academia CompCEDERJ | Contato</title>
 
 </head>
 
 <body>
 
-    <div id="tudo">
-        <header class="cabecalho">
-            <div class="topo">
+    <header class="cabecalho">
+        <div class="topo">
 
-                <div class="container">
+            <div class="container">
 
-                    <a href="https://www.academiacompcederj.com.br">
-                        <img src="img/logo.svg" alt="Academia CompCEDERJ" class="menuPrincipal-logo">
-                    </a>
+                <a href="https://www.academiacompcederj.com.br">
+                    <img src="img/logo.svg" alt="Academia CompCEDERJ" class="menuPrincipal-logo">
+                </a>
 
-                    <button class="btn-menu"><i class="fas fa-bars fa-2x"></i></button>
-
-                </div>
-
-                <nav class="menuPrincipal">
-                    <div class="container">
-                        <ul class="menuPrincipal-list">
-                            <li class="menuPrincipal-list-item">
-                                <a class="menuPrincipal-link" href="https://www.academiacompcederj.com.br"><i
-                                        class="fas fa-home"></i>Home</a>
-                            </li>
-                            <li class="menuPrincipal-list-item">
-                                <a class="menuPrincipal-link" href="#"><i class="fas fa-graduation-cap"></i>Como
-                                    Funciona</a>
-                            </li>
-                            <li class="menuPrincipal-list-item">
-                                <a class="menuPrincipal-link atual" href="https://www.academiacompcederj.com.br/contato"><i
-                                        class="fas fa-comments"></i>Contato</a>
-                            </li>
-                            <li class="menuPrincipal-list-item">
-                                <a class="menuPrincipal-link btn-areaDoAluno"
-                                    href="https://www.academiacompcederj.com.br/area-do-aluno"><i
-                                        class="fas fa-user-graduate"></i>Área do Aluno</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
+                <button class="btn-menu"><i class="fas fa-bars fa-2x"></i></button>
 
             </div>
-        </header>
 
+            <nav class="menuPrincipal">
+                <div class="container">
+                    <ul class="menuPrincipal-list">
+                        <li class="menuPrincipal-list-item">
+                            <a class="menuPrincipal-link" href="https://www.academiacompcederj.com.br">
+                                <i class="fas fa-home"></i>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li class="menuPrincipal-list-item">
+                            <a class="menuPrincipal-link" href="#">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Como Funciona</span>
+                            </a>
+                        </li>
+                        <li class="menuPrincipal-list-item">
+                            <a class="menuPrincipal-link" href="https://www.academiacompcederj.com.br/contato">
+                                <i class="fas fa-comments"></i>
+                                <span class="atual">Contato</span>
+                            </a>
+                        </li>
+                        <li class="menuPrincipal-list-item">
+                            <a class="menuPrincipal-link btn-areaDoAluno"
+                                href="https://www.academiacompcederj.com.br/area-do-aluno">
+                                <i class="fas fa-user-graduate"></i>
+                                <span>Área do Aluno</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+    </header>
+
+    <main id="contato">
         <div class="container-titulo">
             <div class="container">
 
@@ -92,85 +97,98 @@
 
                 <h2 class="titulo">Contato</h2>
                 <p class="subtitulo">Se tem qualquer dúvida, problema ou sugestão, é só entrar em contato pelo
-                    formulário abaixo ou através do nosso facebook <a href="https://facebook.com/academiacompcederj" class="destaque" target="_blank">@academiacompcederj</a>
+                    formulário abaixo ou através do nosso facebook <a href="https://facebook.com/academiacompcederj"
+                        class="destaque" target="_blank">@academiacompcederj</a>
                 </p>
             </div>
         </div>
 
-        <section id="formulario-contato">
-            <div class="container">
-                <form>
 
-                    <div class="form-nome">
-                        <label for="tw-contact-name" class="form-label">Nome:</label>
-                        <input value="" type="text" name="nome" id="tw-contact-name" placeholder="Digite seu nome"
-                            required>
-                    </div>
+        <div class="container">
 
-                    <div class="form-email">
-                        <label for="tw-contact-email" class="form-label">E-mail:</label>
-                        <input value="" type="email" name="email" class="form-input validation" id="tw-contact-email"
-                            placeholder="Digite seu e-mail" required>
-                    </div>
 
-                    <div class="form-mensagem">
-                        <label for="tw-contact-message" class="form-label">Mensagem:</label>
-                        <textarea name="mensagem" rows="5" class="form-input textarea validation"
-                            id="tw-contact-message" placeholder="Digite sua mensagem..." required></textarea>
-                    </div>
 
-                    <div class="form-submit">
-                        <button type="submit">Enviar Mensagem</button>
-                    </div>
-                </form>
-            </div>
-        </section>
+            <form method="POST" id="formulario-contato" action="enviar.php">
 
-        <footer id="rodape">
-            <div class="container">
-                <section class="rodape-itens">
+                <div class="status">
+                    <i class="fas fa-check" style="margin-right: 10px;"></i>
+                    Sua mensagem foi enviada com sucesso, responderemos o mais breve possível.
+                </div>
 
-                    <div class="redes-sociais rodape-lista-item">
-                        <h2>NOSSAS REDES SOCIAIS</h2>
-                        <ul class="lista-redes">
+                <div class="campo-formulario">
+                    <label for="nome-contato">Nome</label>
+                    <input type="text" class="preenchimento" name="nome" id="nome-contato" placeholder="Digite seu nome"
+                        required>
+                </div>
 
-                            <li>
-                                <a href="https://www.facebook.com/academiacompcederj" target="_blank">
-                                    <img src="img/facebook.png" alt="Facebook">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.youtube.com/academiacompcederj" target="_blank">
-                                    <img src="img/youtube.png" alt="Youtube">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.instagram.com/" target="_blank">
-                                    <img src="img/instagram.png" alt="Instagram">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="campo-formulario">
+                    <label for="email-contato">E-mail</label>
+                    <input type="email" class="preenchimento" name="email" id="email-contato"
+                        placeholder="Digite seu e-mail" required>
+                </div>
 
-                    <div class="logo-rodape rodape-lista-item">
-                        <a href="#"><img src="img/logo-rodape.png" alt="Logo Academia CompCEDERJ"></a>
-                    </div>
+                <div class="campo-formulario">
+                    <label for="msg-contato">Mensagem</label>
+                    <textarea name="mensagem" class="preenchimento" rows="5" id="msg-contato"
+                        placeholder="Digite sua mensagem" required></textarea>
+                </div>
 
-                    <div class="copyright rodape-lista-item">
-                        <p>© 2020 Academia CompCEDERJ<br>
-                            Todos os Direitos Reservados</p>
-                    </div>
-                </section>
-            </div>
-        </footer>
-    </div>
+                <div class="campo-formulario">
+                    <input type="submit" class="btn btn-enviar" value="Enviar Mensagem">
+                </div>
+            </form>
+        </div>
+    </main>
+
+
+    <footer id="rodape">
+        <div class="container">
+            <section class="rodape-itens">
+
+                <div class="redes-sociais rodape-lista-item">
+                    <p>Nossas redes sociais</p>
+                    <ul class="lista-redes">
+
+                        <li>
+                            <a href="https://www.youtube.com/academiacompcederj" target="_blank">
+                                <img src="img/youtube.png" alt="Youtube">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/academiacompcederj" target="_blank">
+                                <img src="img/facebook.png" alt="Facebook">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <img src="img/instagram.png" alt="Instagram">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="logo-rodape rodape-lista-item">
+                    <a href="#"><img src="img/logo-rodape.png" alt="Logo Academia CompCEDERJ"></a>
+                </div>
+
+                <div class="copyright rodape-lista-item">
+                    <p>© 2020 Academia CompCEDERJ<br>
+                        Todos os Direitos Reservados</p>
+                </div>
+            </section>
+        </div>
+    </footer>
 
     <!-- Scripts Externos -->
     <script src="js/libs/jquery.js"></script>
+    <script src="js/libs/jquery.form.min.js"></script>
 
     <!-- Meus scripts -->
     <script src="js/menu.js"></script>
     <script src="js/botoes.js"></script>
+    <script src="js/enviar.js"></script>
+
+
 
 </body>
 

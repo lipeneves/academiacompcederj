@@ -7,22 +7,13 @@
     flex-direction: column;
     align-items: center;
     background: #f5f6fd;
-    padding: 50px 0;
 }
 
 #area-do-aluno .listaDeCursos{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
-
-#area-do-aluno h2.titulo{
-    
-    font-weight: normal;
-    font-size: 1.5rem;
-    text-align: center;
-    padding: 35px 0;
-    color: #4a535a;
+    padding: 50px 0;
 }
 
 #area-do-aluno .box img.chapeuFormatura{
@@ -48,7 +39,7 @@
     }
 }
 
-#area-do-aluno .box h3.titulo{
+#area-do-aluno .box h3.titulo {
     text-transform: uppercase;
     color: #0e7dac;
     text-align: center;

@@ -3,7 +3,7 @@
     background: #0253a2;
     color: #eee;
     text-align: left;
-    padding-bottom: 55px;
+    padding: 20px 0 70px;
 }
 
 #showcase .container{
@@ -18,8 +18,9 @@
 }
 
 #showcase h1{
-    font-size: 2rem;
+    font-size: 1.7rem;
     margin: 0;
+    text-transform: uppercase;
 }
 
 #showcase p{
@@ -45,6 +46,7 @@
         background: #0253a2 url("../img/bg-showcase.png") repeat-x;
         background-position: bottom;
         background-size: contain;
+        padding: 0 0 55px;
     }
 
     #showcase{
@@ -72,7 +74,7 @@
     }
 
     #showcase h1{
-        font-size: 1.9rem;
+        font-size: 1.85rem;
     }
 
     #showcase p{
@@ -110,7 +112,7 @@
         }
 
         #showcase h1{
-            font-size: 2.5rem;
+            font-size: 2rem;
         } 
 
         #showcase p{

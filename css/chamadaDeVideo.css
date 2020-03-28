@@ -1,8 +1,9 @@
 /************************************* Seção Sobre - Mobile *****************************************/
 
+
 #chamadaDeVideo{
     background: #f5f6fd;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 #chamadaDeVideo .container{
@@ -11,54 +12,8 @@
     align-items: center;
 }
 
-#chamadaDeVideo .video-sobre{
-    position: relative;
-    width: 100%;
-    max-width: 100%;
-    padding-bottom: 56.25%;
-    margin-bottom: 50px; 
-    height: 0;
-    border: 10px solid white;
-    box-shadow: 0 0 .5em rgba(0, 0, 0, 0.2);
-    box-sizing: border-box;
-}
-
-@media (min-width: 650px){
-    #chamadaDeVideo .video-sobre{
-        width: 90%;
-        padding-bottom: 49.25%; 
-    }
-}
-
-@media (min-width: 800px){
-    #chamadaDeVideo .video-sobre{
-        width: 70%;
-        padding-bottom: 37.25%; 
-    }
-}
-
-#chamadaDeVideo .video-sobre iframe{
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-}
-
-#chamadaDeVideo h2.pq{
-    text-align: center;
-    color: #4a535a;
-}
-
-#chamadaDeVideo div.titulo{
-    margin: 35px 0;
-}
-
-@media (min-width: 425px){
-    #chamadaDeVideo .video-sobre{
-        border: 15px solid white; 
-    }
+#chamadaDeVideo h2{
+    font-size: 1.5rem;
 }
 
 #chamadaDeVideo p{
@@ -70,20 +25,60 @@
     color: #4a535a;
 }
 
+#chamadaDeVideo .embed{
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    padding-bottom: 56.25%;
+    margin-bottom: 30px; 
+    height: 0;
+    border: 10px solid white;
+    box-shadow: 0 0 .5em rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+    @media (min-width: 425px){
+        #chamadaDeVideo .embed{
+            border: 15px solid white; 
+        }
+    }
+
+    @media (min-width: 650px){
+        #chamadaDeVideo .embed{
+            width: 90%;
+            padding-bottom: 49.25%; 
+        }
+    }
+
+    @media (min-width: 800px){
+        #chamadaDeVideo .embed{
+            width: 70%;
+            padding-bottom: 37.25%; 
+        }
+    }
+
+#chamadaDeVideo .embed iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
 
 /************************************* Seção Sobre - Desktop *****************************************/
 
-
 @media (min-width: 1250px){
+    #chamadaDeVideo{
+        padding-bottom: 35px;
+    }
+    
     #chamadaDeVideo h2{
         font-size: 1.8rem;
     }
 
     #chamadaDeVideo p{
         font-size: 1.5rem;
-    }
-
-    #chamadaDeVideo div.titulo{
-        margin: 50px 0;
     }
 }

@@ -18,6 +18,7 @@ body{
 .container{
     width: 92%;
     margin: 0 auto;
+    max-width: 1200px;
 }
 
 .btn{
@@ -49,4 +50,26 @@ body{
 .icone{
     font-size: 60px;
     margin-bottom: 20px;
+}
+
+.chamada{
+    margin: 30px 0 25px;
+    text-align: center;
+    color: #4a535a;
+    width: 92%;
+}
+
+    @media (min-width: 1250px){
+        .chamada{
+            margin: 50px 0 25px;
+        }
+    }
+
+.chamada h2{
+    text-transform: uppercase;
+    line-height: 1.9rem;
+}
+
+.chamada p{
+    max-width: 650px;
 }

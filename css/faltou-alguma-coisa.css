@@ -1,18 +1,18 @@
-#contato-home{
+#faltou-alguma-coisa{
     background: #0e7dac;
     text-align: center;
     color: white;
     padding: 20px 0;
 }
 
-#contato-home .link{
+#faltou-alguma-coisa .link{
     display: block;
     margin: 15px auto 0 auto;
     background: #02B875;
     max-width: 200px;
 }
 
-#contato-home .link:hover{
+#faltou-alguma-coisa .link:hover{
     background: rgba(2, 184, 117, .75);
     transition: background .5s;
 }

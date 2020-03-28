@@ -1,5 +1,6 @@
 /*********************************** Cabeçalho - Mobile **************************************/
 
+/* Div criada apenas para funcionamento do script de responsividade do menu */
 .topo{
     display: flex;
     align-items: center;
@@ -7,22 +8,19 @@
     height: 105px;
 }
 
+/* Container da div topo */
 .topo .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+/* Logo do Header */
 .menuPrincipal-logo{
     width: 180px;
 }
 
-@media (min-width: 380px){
-    .menuPrincipal-logo{
-        width: 190px;
-    }
-}
-
+/* Botão hamburguer do Menu mobile */
 .btn-menu{
     background: none;
     border: none;
@@ -31,6 +29,19 @@
     width: 28px;
 }
 
+/* Nav do menu principal */
+.menuPrincipal{
+    display: none;
+    background: #F5F6FD;
+}
+
+/* Icones presentes nos links mobile */
+.menuPrincipal svg.svg-inline--fa{
+    width: 18px;
+    margin-right: 10px;
+}
+
+/* Links do menu */
 .menuPrincipal-link{
     display: block;
     color: #0253a2;
@@ -40,62 +51,70 @@
     white-space: nowrap;
     transition: color .4s;
 }
+    /* Link hover */
+    .menuPrincipal-link:hover{
+        color: rgba(2,83,162,0.6);
+        transition: color .4s;
+    }
 
-.menuPrincipal-link:hover{
-    color: rgba(31, 76, 202, 0.6);
-    transition: color .4s;
-}
-
-.menuPrincipal svg.svg-inline--fa{
-    margin-right: 10px;
-}
-
-.menuPrincipal{
-    display: none;
-    background: #F5F6FD;
-}
 
 /*********************************** Cabeçalho - Desktop **************************************/
 
-@media (min-width: 768px){  
+@media (min-width: 768px){
 
-    .container{
-        max-width: 1200px;
-    }
-
-    .topo .container{
-        justify-content: space-between;
-    }
-
+    /* Nav do menu principal */
     .menuPrincipal{
         display: block;
         background: none;
     }
 
-    .menuPrincipal-link{
-        border: none;
-        color: white;
-        text-transform: uppercase;
-    }
-
-    .menuPrincipal-link:hover{
-        color: rgba(255, 255, 255, 0.6);
-    }
-
+    /* Icones presentes nos links mobile */
     .menuPrincipal svg.svg-inline--fa{
         display: none;
     }
 
-    .menuPrincipal-list{
+    /* Links do menu */
+    .menuPrincipal-link{
+        border: none;
+        color: white;
+    }   
+        /* Link hover */
+        .menuPrincipal-link:hover{
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+    /* ul do Menu */
+    ul.menuPrincipal-list{
         display: flex;
     }
 
-    .menuPrincipal-list-item{
-        padding: 0 20px;
+    /* Li's do Menu */
+    li.menuPrincipal-list-item{
+        padding: 0 15px;
     }
 
+        @media (min-width: 1024px){
+            /* Li's do Menu */
+            li.menuPrincipal-list-item{
+                padding: 0 17px;
+            }
+            
+            /* Logo do Header */
+            .menuPrincipal-logo{
+                width: 190px;
+            }
+        }
+
+        @media (min-width: 1200px){
+            /* Li's do Menu */
+            li.menuPrincipal-list-item{
+                padding: 0 20px;
+            }
+        }
+
+    /* Botão da Área do Aluno */
     .btn-areaDoAluno{
-        display: inline-block;
+        display: block;
         font-weight: bold;
         font-size: .9rem;
         color: #eee;
@@ -105,9 +124,9 @@
         background: #0a5fa5;
         transition: background .7s;
     }
-
-    .btn-areaDoAluno:hover{
-        background: #eee;
-        color: #0a5fa5;
-        transition: background .7s;
-    }
+        /* Hover do Botão de Área do Aluno */
+        .btn-areaDoAluno:hover{
+            background: #eee;
+            color: #0a5fa5;
+            transition: background .7s;
+        }
