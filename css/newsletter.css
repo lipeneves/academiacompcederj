@@ -1,30 +1,25 @@
 /************************************* Seção Newsletter - Mobile *****************************************/
 
-#newsletter{
+.newsletter{
     background: #0e7dac;
     color: white;
     text-align: center;
     padding: 20px 0;
 }
 
-#newsletter .formkit-alert{
-    
-}
-
-#newsletter .container{
+.newsletter .container{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#newsletter form{
+.newsletter form{
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
 }
 
-#newsletter .btn-inscrevaSe{
+.newsletter .btn-inscrevaSe{
     background: #02B875;
     border: none;
     border-radius: 0 5px 5px 0;
@@ -36,11 +31,11 @@
     font-size: .8rem;
 }
 
-#newsletter .btn-inscrevaSe:hover{
+.newsletter .btn-inscrevaSe:hover{
     cursor: pointer;
 }
 
-#newsletter .campoEmail{
+.newsletter .campoEmail{
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
@@ -48,18 +43,58 @@
     margin-top: 20px;
 }
 
-#newsletter .campoEmail .email-newsletter{
+.newsletter .campoEmail .email-newsletter{
     border: none;
     border-radius: 5px 0 0 5px;
     padding: .5rem;
     width: 85%;
+}
+
+div.newsletter .campoEmail .email-newsletter{
     max-width: 380px;
 }
 
-#newsletter fieldset{
+.newsletter fieldset{
     border: none;
 }
 
-#newsletter fieldset legend{
+.newsletter fieldset legend{
     text-align: center;
+}
+
+span.newsletter{
+    background: none;
+    padding: 0;
+}
+
+span.newsletter .seva-fields{
+    width: 100%;
+}
+
+@media (min-width: 640px){
+    span.newsletter .seva-fields{
+        width: 95%;
+    }
+}
+
+span.newsletter .campoEmail .email-newsletter {
+    width: 100%;
+}
+
+@media (min-width: 946px){
+    span.newsletter .campoEmail .email-newsletter {
+        width: 260px;
+    }
+}
+
+@media (min-width: 980px){
+    span.newsletter .campoEmail .email-newsletter {
+        width: 280px;
+    }
+}
+
+@media (min-width: 1100px){
+    span.newsletter .campoEmail .email-newsletter {
+        width: 330px;
+    }
 }

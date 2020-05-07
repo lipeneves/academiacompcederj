@@ -28,12 +28,13 @@
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/cabecalho.css">
     <link rel="stylesheet" href="css/container-titulo.css">
-    <link rel="stylesheet" href="css/formulario-contato.css">
+    <link rel="stylesheet" href="css/chamadaDeVideo.css">
+    <link rel="stylesheet" href="css/como-funciona.css">
     <link rel="stylesheet" href="css/rodape.css">
 
     <link rel="shortcut icon" href="img/favicon.png" type="image/png">
 
-    <title>Academia CompCEDERJ | Contato</title>
+    <title>Academia CompCEDERJ | Como Funciona</title>
 
 </head>
 
@@ -64,13 +65,13 @@
                         <li class="menuPrincipal-list-item">
                             <a class="menuPrincipal-link" href="https://www.academiacompcederj.com.br/como-funciona">
                                 <i class="fas fa-graduation-cap"></i>
-                                <span>Como Funciona</span>
+                                <span class="atual">Como Funciona</span>
                             </a>
                         </li>
                         <li class="menuPrincipal-list-item">
                             <a class="menuPrincipal-link" href="https://www.academiacompcederj.com.br/contato">
                                 <i class="fas fa-comments"></i>
-                                <span class="atual">Contato</span>
+                                <span>Contato</span>
                             </a>
                         </li>
                         <li class="menuPrincipal-list-item">
@@ -87,57 +88,69 @@
         </div>
     </header>
 
-    <main id="contato">
+    <main id="como-funciona">
         <div class="container-titulo">
             <div class="container">
 
                 <div>
-                    <i class="fas fa-comments icone"></i>
+                    <i class="fas fa-laptop-code icone"></i>
                 </div>
 
-                <h2 class="titulo">Contato</h2>
-                <p class="subtitulo">Se tem qualquer dúvida, problema ou sugestão, é só entrar em contato pelo
-                    formulário abaixo ou através do nosso facebook <a href="https://facebook.com/academiacompcederj"
-                        class="destaque" target="_blank">@academiacompcederj</a>
+                <h2 class="titulo">Como Funciona?</h2>
+                <p class="subtitulo">Conheça as principais vantagens de estudar na <span class="destaque">Academia
+                        CompCEDERJ</span>
                 </p>
             </div>
         </div>
 
+        <section class="entenda">
+            <div class="container">
 
-        <div class="container">
+                <div class="texto">
+                    <p class="objetivo">Somos agentes de transformação do nosso curso
+                    </p>
 
+                    <p class="descricao">
+                        A Academia CompCEDERJ foi criada por um ex-aluno do CEDERJ que com a vivência dentro do curso
+                        percebeu alguns aspectos em especial no curso de Tecnologia em Sistemas de Computação que precisavam ser melhorados. Muitas vezes ouvi colegas de turma dizendo
+                        que era "Mais fácil
+                        aprender assistindo aulas no Youtube ou estudando por algum livro". Foi desse desejo por excelência que nasceu a Academia CompCEDERJ.
+                    </p>
 
+                    <ul>
+                        <span class="problemas">Essas são algumas das principais dificuldades relatadas por alunos de Sistemas de
+                            Computação do CEDERJ:</span>
+                        <li class="item-lista contras"><i class="fas fa-exclamation-circle"></i> Tempo de duração das
+                            aulas (geralmente acima de 1h) o que as tornava muito cansativa de assistir</li>
+                        <li class="item-lista contras"><i class="fas fa-exclamation-circle"></i> Aulas com pouco
+                            dinamismo, professor costumava falar por longos períodos sem pausas</li>
+                        <li class="item-lista contras"><i class="fas fa-exclamation-circle"></i> Falta de atualização do
+                            material (Em sua maioria foram gravados a mais de 10 anos)</li>
+                        <li class="item-lista contras"><i class="fas fa-exclamation-circle"></i> Pouco material em forma
+                            de texto</li>
+                    </ul>
 
-            <form method="POST" id="formulario-contato" action="enviar.php">
+                    <p class="objetivo">Buscando sanar essas e outras dificuldades, em 2020 nasce a Academia CompCEDERJ
+                    </p>
 
-                <div class="status">
-                    <i class="fas fa-check" style="margin-right: 10px;"></i>
-                    Sua mensagem foi enviada com sucesso, responderemos o mais breve possível.
+                    <ul>
+                        <span class="problemas">Algumas vantagens de estudar na Academia CompCEDERJ:</span>
+                        <li class="item-lista pros"><i class="fas fa-check"></i> Cada aula do curso é gravada em
+                            videos de no máximo 15 minutos</li>
+                        <li class="item-lista pros"><i class="fas fa-check"></i> Didática leve e descontraída</li>
+                        <li class="item-lista pros"><i class="fas fa-check"></i> Cada aula conta com um material de
+                            apoio em formato PDF</li>
+                        <li class="item-lista pros"><i class="fas fa-check"></i> Exercícios corrigidos</li>
+                    </ul>
+
+                    <p>
+                        Além disso, estamos sempre disponibizando materiais extracurriculares, afim de preparar nossos alunos para o mercado de trabalho.
+                    </p>
                 </div>
 
-                <div class="campo-formulario">
-                    <label for="nome-contato">Nome</label>
-                    <input type="text" class="preenchimento" name="nome" id="nome-contato" placeholder="Digite seu nome"
-                        required>
-                </div>
+            </div>
+        </section>
 
-                <div class="campo-formulario">
-                    <label for="email-contato">E-mail</label>
-                    <input type="email" class="preenchimento" name="email" id="email-contato"
-                        placeholder="Digite seu e-mail" required>
-                </div>
-
-                <div class="campo-formulario">
-                    <label for="msg-contato">Mensagem</label>
-                    <textarea name="mensagem" class="preenchimento" rows="5" id="msg-contato"
-                        placeholder="Digite sua mensagem" required></textarea>
-                </div>
-
-                <div class="campo-formulario">
-                    <input type="submit" class="btn btn-enviar" value="Enviar Mensagem">
-                </div>
-            </form>
-        </div>
     </main>
 
 

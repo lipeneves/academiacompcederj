@@ -1,0 +1,54 @@
+#como-funciona{
+    padding-bottom: 60px;
+}
+
+#como-funciona #chamadaDeVideo .container{
+    padding-top: 45px;
+}
+
+#como-funciona .texto p{
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    text-align: left;
+}
+
+#como-funciona .texto p.objetivo{
+    text-align: center;
+    margin: 2rem 0;
+}
+
+#como-funciona .descricao{
+    margin: 30px 0;
+}
+
+li.item-lista{
+    margin-bottom: 15px;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 20px;
+}
+
+    .contras{
+        background: #d43c54;
+    }
+
+    .pros{
+        background: #02B875;
+    }
+
+.problemas{
+    display: block;
+    font-size: 1.2rem;
+    padding-bottom: 25px;
+}
+
+.objetivo{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.item-lista svg{
+    margin-right: 5px;
+}

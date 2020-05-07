@@ -7,7 +7,7 @@ $(function(){
             $("#formulario-contato").resetForm();
             setTimeout(() => {
                 $(".status").hide();
-            }, 8000);
+            }, 5000);
         }
     });
 });

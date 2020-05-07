@@ -81,7 +81,8 @@
         color: #ccc;
     }
 
-.status-form{
+.status{
+    display: none;
     padding: 15px;
     background: #02B875;
     font-size: 1rem;
